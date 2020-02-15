@@ -35,6 +35,9 @@ public class Main extends javax.swing.JFrame {
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuBar1 = new javax.swing.JMenuBar();
         menuAcciones = new javax.swing.JMenu();
+        menuContabilidad = new javax.swing.JMenu();
+        menuCGeneral = new javax.swing.JMenuItem();
+        menuXFactura = new javax.swing.JMenuItem();
         menuReportes = new javax.swing.JMenu();
         menuPeopleReport = new javax.swing.JMenuItem();
         menuProductos = new javax.swing.JMenuItem();
@@ -52,6 +55,26 @@ public class Main extends javax.swing.JFrame {
         setFont(new java.awt.Font("Arial", 1, 10)); // NOI18N
 
         menuAcciones.setText("Acciones");
+
+        menuContabilidad.setText("Contabilidad");
+
+        menuCGeneral.setText("General");
+        menuCGeneral.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuCGeneralActionPerformed(evt);
+            }
+        });
+        menuContabilidad.add(menuCGeneral);
+
+        menuXFactura.setText("Una Factura");
+        menuXFactura.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuXFacturaActionPerformed(evt);
+            }
+        });
+        menuContabilidad.add(menuXFactura);
+
+        menuAcciones.add(menuContabilidad);
 
         menuReportes.setText("Reportes");
 
@@ -169,6 +192,14 @@ public class Main extends javax.swing.JFrame {
         showReports.setVisible(true);
     }//GEN-LAST:event_menuReporteFacturaActionPerformed
 
+    private void menuCGeneralActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuCGeneralActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuCGeneralActionPerformed
+
+    private void menuXFacturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuXFacturaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuXFacturaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -210,6 +241,8 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JMenu menuAcciones;
     private javax.swing.JMenuItem menuAddPerson;
     private javax.swing.JMenuItem menuAddProduct;
+    private javax.swing.JMenuItem menuCGeneral;
+    private javax.swing.JMenu menuContabilidad;
     private javax.swing.JMenuItem menuFactura;
     private javax.swing.JMenu menuGrabar;
     private javax.swing.JMenuItem menuPeopleReport;
@@ -217,5 +250,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JMenuItem menuReporteFactura;
     private javax.swing.JMenu menuReportes;
     private javax.swing.JMenuItem menuSalir;
+    private javax.swing.JMenuItem menuXFactura;
     // End of variables declaration//GEN-END:variables
 }
