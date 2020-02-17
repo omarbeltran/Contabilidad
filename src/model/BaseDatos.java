@@ -14,6 +14,20 @@ import java.util.ArrayList;
 public class BaseDatos{
 
     /**
+     * @return the cuentasContables
+     */
+    public ArrayList<CuentaContable> getCuentasContables() {
+        return cuentasContables;
+    }
+
+    /**
+     * @param cuentasContables the cuentasContables to set
+     */
+    public void setCuentasContables(ArrayList<CuentaContable> cuentasContables) {
+        this.cuentasContables = cuentasContables;
+    }
+
+    /**
      * @return the regimen
      */
     public ArrayList<Regimen> getRegimen() {
@@ -74,6 +88,7 @@ public class BaseDatos{
     private ArrayList<Producto> productos;
     private ArrayList<Persona> personas;
     private ArrayList<Regimen> regimen;
+    private ArrayList<CuentaContable> cuentasContables;
     
     public BaseDatos(){
         facturas = new ArrayList<>();

@@ -17,7 +17,6 @@ import model.Producto;
  */
 public class ControladorFactura {
     
-    //private static ControladorBaseDatos controladorBaseDatos;
     private static ArrayList<Factura> facturas;
     private ControladorProducto controladorProducto;
     ControladorFactura() {

@@ -70,4 +70,46 @@ public class CuentaContable {
     private String nombreCta;
     private double valorCta;
     private String descripcionCta;
+    
+    public CuentaContable(int idCta, String nombreCuenta) {
+        this.idCta = idCta;
+        this.nombreCta = nombreCuenta;
+        this.valorCta = 0;
+        this.descripcionCta = "";
+    }
+    
+    public CuentaContable(int idCta, String nombreCuenta, double valorCta, String descripcion) {
+        this.idCta = idCta;
+        this.nombreCta = nombreCuenta;
+        this.valorCta = valorCta;
+        this.descripcionCta = descripcion;
+    }
+    
+    public CuentaContable(int idCta, String nombreCuenta, double valorCta) {
+        this.idCta = idCta;
+        this.nombreCta = nombreCuenta;
+        this.valorCta = valorCta;
+        this.descripcionCta = "";
+    }
+    
+    public CuentaContable(String idCta, String nombreCuenta) {
+        this.idCta = Integer.parseInt(idCta);
+        this.nombreCta = nombreCuenta;
+        this.valorCta = 0;
+        this.descripcionCta = "";
+    }
+    
+    public CuentaContable(String idCta, String nombreCuenta, String valorCta) {
+        this.idCta = Integer.parseInt(idCta);
+        this.nombreCta = nombreCuenta;
+        this.valorCta = Double.parseDouble(valorCta);
+        this.descripcionCta = "";
+    }
+    
+    public CuentaContable(String idCta, String nombreCuenta, String valorCta, String descripcion) {
+        this.idCta = Integer.parseInt(idCta);
+        this.nombreCta = nombreCuenta;
+        this.valorCta = Double.parseDouble(valorCta);
+        this.descripcionCta = descripcion;
+    }
 }

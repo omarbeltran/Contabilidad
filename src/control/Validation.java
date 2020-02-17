@@ -121,4 +121,9 @@ public final class Validation {
     public static boolean verifyDataRegimen(String tipoRegimen) {
         return isStringName(tipoRegimen);
     }
+    
+    public static boolean verifyDataCuentaContable(String name, int id)
+    {
+        return isDigit(String.valueOf(id)) && isStringName(name);
+    }
 }
