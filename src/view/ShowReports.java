@@ -78,7 +78,9 @@ public class ShowReports extends javax.swing.JDialog {
         if (optReport == 2)
             tableModel = CMT.getPersonas();
         if (optReport == 3)
-            tableModel = CMT.getProductos(); 
+            tableModel = CMT.getProductos();
+        if (optReport == 4)
+            tableModel = CMT.getContabilidad();
         jTable1.setModel(tableModel);      
     }
     

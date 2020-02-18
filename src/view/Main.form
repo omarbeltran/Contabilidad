@@ -21,11 +21,14 @@
               <SubComponents>
                 <MenuItem class="javax.swing.JMenuItem" name="menuCGeneral">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="General"/>
+                    <Property name="text" type="java.lang.String" value="Generar"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuCGeneralActionPerformed"/>
                   </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="Main_menuCGenerar"/>
+                  </AuxValues>
                 </MenuItem>
                 <MenuItem class="javax.swing.JMenuItem" name="menuXFactura">
                   <Properties>

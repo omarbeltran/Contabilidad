@@ -95,6 +95,7 @@ public class BaseDatos{
         productos = new ArrayList<>();
         personas = new ArrayList<>();
         regimen = new ArrayList<>();
+        cuentasContables = new ArrayList<>();
     }
     /**Singleton
      * @return la base de datos

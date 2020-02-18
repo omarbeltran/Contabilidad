@@ -58,7 +58,7 @@ public class Main extends javax.swing.JFrame {
 
         menuContabilidad.setText("Contabilidad");
 
-        menuCGeneral.setText("General");
+        menuCGeneral.setText("Generar");
         menuCGeneral.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuCGeneralActionPerformed(evt);
@@ -197,7 +197,9 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_menuCGeneralActionPerformed
 
     private void menuXFacturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuXFacturaActionPerformed
-        // TODO add your handling code here:
+        ShowReports showProducts = new ShowReports(this, rootPaneCheckingEnabled, 4, "");
+        showProducts.setTitle("Contabilidad");
+        showProducts.setVisible(true);
     }//GEN-LAST:event_menuXFacturaActionPerformed
 
     /**
