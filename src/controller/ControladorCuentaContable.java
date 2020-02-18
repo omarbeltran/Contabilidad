@@ -34,9 +34,13 @@ public class ControladorCuentaContable {
          * identificación el cual debe coincidir con el establecido en el PUC
          * (PLAN UNICO DE CUENTAS).
          */
-        CuentaContable cuentaContable = new CuentaContable(0, " ");
-        if(verifyDataCuentaContable(cuentaContable.getNombreCta(), cuentaContable.getIdCta()))
-            addCuentaContable(cuentaContable);
+        CuentaContable cuentaContable1 = new CuentaContable(1110000000, "BANCOS");
+        if(verifyDataCuentaContable(cuentaContable1.getNombreCta(), cuentaContable1.getIdCta()))
+            addCuentaContable(cuentaContable1);
+        
+        CuentaContable cuentaContable2 = new CuentaContable(1105000000, "CAJA");
+        if(verifyDataCuentaContable(cuentaContable2.getNombreCta(), cuentaContable2.getIdCta()))
+            addCuentaContable(cuentaContable2);
     }
     
     public boolean addCuentaContable(String id, String name){

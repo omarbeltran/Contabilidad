@@ -36,7 +36,7 @@ public class Main extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         menuAcciones = new javax.swing.JMenu();
         menuContabilidad = new javax.swing.JMenu();
-        menuCGeneral = new javax.swing.JMenuItem();
+        menuCGenerar = new javax.swing.JMenuItem();
         menuXFactura = new javax.swing.JMenuItem();
         menuReportes = new javax.swing.JMenu();
         menuPeopleReport = new javax.swing.JMenuItem();
@@ -58,13 +58,13 @@ public class Main extends javax.swing.JFrame {
 
         menuContabilidad.setText("Contabilidad");
 
-        menuCGeneral.setText("Generar");
-        menuCGeneral.addActionListener(new java.awt.event.ActionListener() {
+        menuCGenerar.setText("Generar");
+        menuCGenerar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuCGeneralActionPerformed(evt);
+                menuCGenerarActionPerformed(evt);
             }
         });
-        menuContabilidad.add(menuCGeneral);
+        menuContabilidad.add(menuCGenerar);
 
         menuXFactura.setText("Una Factura");
         menuXFactura.addActionListener(new java.awt.event.ActionListener() {
@@ -192,9 +192,10 @@ public class Main extends javax.swing.JFrame {
         showReports.setVisible(true);
     }//GEN-LAST:event_menuReporteFacturaActionPerformed
 
-    private void menuCGeneralActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuCGeneralActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_menuCGeneralActionPerformed
+    private void menuCGenerarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuCGenerarActionPerformed
+        // aca se debe invocar el metodo que realizara la contabilidad
+        
+    }//GEN-LAST:event_menuCGenerarActionPerformed
 
     private void menuXFacturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuXFacturaActionPerformed
         ShowReports showProducts = new ShowReports(this, rootPaneCheckingEnabled, 4, "");
@@ -243,7 +244,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JMenu menuAcciones;
     private javax.swing.JMenuItem menuAddPerson;
     private javax.swing.JMenuItem menuAddProduct;
-    private javax.swing.JMenuItem menuCGeneral;
+    private javax.swing.JMenuItem menuCGenerar;
     private javax.swing.JMenu menuContabilidad;
     private javax.swing.JMenuItem menuFactura;
     private javax.swing.JMenu menuGrabar;

@@ -19,12 +19,12 @@
                 <Property name="text" type="java.lang.String" value="Contabilidad"/>
               </Properties>
               <SubComponents>
-                <MenuItem class="javax.swing.JMenuItem" name="menuCGeneral">
+                <MenuItem class="javax.swing.JMenuItem" name="menuCGenerar">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Generar"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuCGeneralActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuCGenerarActionPerformed"/>
                   </Events>
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="Main_menuCGenerar"/>

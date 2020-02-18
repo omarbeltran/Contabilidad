@@ -47,6 +47,7 @@ public class ControladorBaseDatos extends BaseDatos{
     private final ControladorProducto controladorProducto;
     private final ControladorRegimen controladorRegimen;
     private final ControladorFactura controladorFactura;
+    private final ControladorCuentaContable controladorCuentaContable;
     
     /**
      *
@@ -57,6 +58,7 @@ public class ControladorBaseDatos extends BaseDatos{
         controladorProducto = new ControladorProducto(BD);
         controladorRegimen = new ControladorRegimen(BD);
         controladorFactura = new ControladorFactura(BD, controladorProducto);
+        controladorCuentaContable = new ControladorCuentaContable(BD);
     }
     
     /**Singleton
