@@ -12,6 +12,20 @@ package model;
 public class CuentaContable {
 
     /**
+     * @return the naturaleza
+     */
+    public String getNaturaleza() {
+        return naturaleza;
+    }
+
+    /**
+     * @param naturaleza the naturaleza to set
+     */
+    public void setNaturaleza(String naturaleza) {
+        this.naturaleza = naturaleza;
+    }
+
+    /**
      * @return the idCta
      */
     public int getIdCta() {
@@ -70,46 +84,58 @@ public class CuentaContable {
     private String nombreCta;
     private double valorCta;
     private String descripcionCta;
+    private String naturaleza;
     
-    public CuentaContable(int idCta, String nombreCuenta) {
+    private String getNaturaleza(String naturalezaCuenta){
+        String naturaleza;
+        return "";
+    }
+    
+    public CuentaContable(int idCta, String nombreCuenta, String naturalezaCuenta) {
         this.idCta = idCta;
         this.nombreCta = nombreCuenta;
         this.valorCta = 0;
         this.descripcionCta = "";
+        this.naturaleza = naturalezaCuenta;
     }
     
-    public CuentaContable(int idCta, String nombreCuenta, double valorCta, String descripcion) {
+    public CuentaContable(int idCta, String nombreCuenta, double valorCta, String descripcion, String naturalezaCuenta) {
         this.idCta = idCta;
         this.nombreCta = nombreCuenta;
         this.valorCta = valorCta;
         this.descripcionCta = descripcion;
+        this.naturaleza = naturalezaCuenta;
     }
     
-    public CuentaContable(int idCta, String nombreCuenta, double valorCta) {
+    public CuentaContable(int idCta, String nombreCuenta, double valorCta, String naturalezaCuenta) {
         this.idCta = idCta;
         this.nombreCta = nombreCuenta;
         this.valorCta = valorCta;
         this.descripcionCta = "";
+        this.naturaleza = naturalezaCuenta;
     }
     
-    public CuentaContable(String idCta, String nombreCuenta) {
+    public CuentaContable(String idCta, String nombreCuenta, String naturalezaCuenta) {
         this.idCta = Integer.parseInt(idCta);
         this.nombreCta = nombreCuenta;
         this.valorCta = 0;
         this.descripcionCta = "";
+        this.naturaleza = naturalezaCuenta;
     }
     
-    public CuentaContable(String idCta, String nombreCuenta, String valorCta) {
+    public CuentaContable(String idCta, String nombreCuenta, String valorCta, String naturalezaCuenta) {
         this.idCta = Integer.parseInt(idCta);
         this.nombreCta = nombreCuenta;
         this.valorCta = Double.parseDouble(valorCta);
         this.descripcionCta = "";
+        this.naturaleza = naturalezaCuenta;
     }
     
-    public CuentaContable(String idCta, String nombreCuenta, String valorCta, String descripcion) {
+    public CuentaContable(String idCta, String nombreCuenta, String valorCta, String descripcion, String naturalezaCuenta) {
         this.idCta = Integer.parseInt(idCta);
         this.nombreCta = nombreCuenta;
         this.valorCta = Double.parseDouble(valorCta);
         this.descripcionCta = descripcion;
+        this.naturaleza = naturalezaCuenta;
     }
 }

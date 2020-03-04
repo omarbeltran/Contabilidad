@@ -33,18 +33,23 @@ public class ControladorCuentaContable {
         /**Cuando se crea una cuenta contable se debe asignar un número de 
          * identificación el cual debe coincidir con el establecido en el PUC
          * (PLAN UNICO DE CUENTAS).
+         * En el campo Naturaleza se acepta cualquier combinación entre mayúculas
+         * y minúsculas que formen las palabras CREDITO o DEBITO, también se 
+         * acepta la acentuación en la e de cada palabra.
+         * Adicionalmente se puede colocar el caracter C para identificar naturaleza 
+         * Créditoy D para identificar Naturaleza Débito
          */
-        CuentaContable cuentaContable1 = new CuentaContable(1110000000, "BANCOS");
-        if(verifyDataCuentaContable(cuentaContable1.getNombreCta(), cuentaContable1.getIdCta()))
+        CuentaContable cuentaContable1 = new CuentaContable(1110000000, "BANCOS", "DeBiTO");
+        if(verifyDataCuentaContable(cuentaContable1.getNombreCta(), cuentaContable1.getIdCta(), cuentaContable1.getNaturaleza()))
             addCuentaContable(cuentaContable1);
         
-        CuentaContable cuentaContable2 = new CuentaContable(1105000000, "CAJA");
-        if(verifyDataCuentaContable(cuentaContable2.getNombreCta(), cuentaContable2.getIdCta()))
+        CuentaContable cuentaContable2 = new CuentaContable(1105000000, "CAJA", "Crédito");
+        if(verifyDataCuentaContable(cuentaContable2.getNombreCta(), cuentaContable2.getIdCta(), cuentaContable2.getNaturaleza()))
             addCuentaContable(cuentaContable2);
     }
     
-    public boolean addCuentaContable(String id, String name){
-        CuentaContable cuentaContableTmp = new CuentaContable(Integer.valueOf(id), name);
+    public boolean addCuentaContable(String id, String name, String naturalezaCuenta){
+        CuentaContable cuentaContableTmp = new CuentaContable(Integer.valueOf(id), name, naturalezaCuenta);
         return addCuentaContable(cuentaContableTmp);
     }
     

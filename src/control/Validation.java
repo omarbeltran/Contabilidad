@@ -69,6 +69,11 @@ public final class Validation {
         return flag;
     }
     
+    public static boolean isNaturalezaCuenta(String naturaleza)
+    {    
+        return matches("([C|c][R|r][E|e|é][D|d][I|i][T|t][O|o])|([D|d][E|e|é][B|b][I|i][T|t][O|o])|([C|D])", naturaleza);
+    }
+    
     private boolean isStringAlphaNumeric(String cadena){
         boolean flag = true;//se asume que la cadena es válida por tanto se deja por defecto true
         int index;
@@ -122,8 +127,8 @@ public final class Validation {
         return isStringName(tipoRegimen);
     }
     
-    public static boolean verifyDataCuentaContable(String name, int id)
+    public static boolean verifyDataCuentaContable(String name, int id, String naturaleza)
     {
-        return isDigit(String.valueOf(id)) && isStringName(name);
+        return isDigit(String.valueOf(id)) && isStringName(name) && isNaturalezaCuenta(naturaleza);
     }
 }
